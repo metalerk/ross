@@ -13,3 +13,7 @@ python ross.py
 ```
 
 and a prompt will ask for the URL.
+
+### Configuration
+
+You can use [this guide](https://sinfallas.wordpress.com/2014/06/16/tor-polipo-privoxy/) to configure Tor + Polipo + Privoxy.

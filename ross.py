@@ -21,6 +21,7 @@
 ###                                                           ###
 #################################################################
 
+import sys
 import requests
 from colorama import Fore, init
 from subprocess import call
@@ -47,16 +48,16 @@ print("""
       ##################################################
 """)
 
-url = raw_input(Fore.YELLOW + "\t[+] Introduce la url: " + Fore.RESET)
+url = input(Fore.YELLOW + "\t[+] Introduce la url: " + Fore.RESET)
 
-if not url.startswith("http://"):
-    url = "http://" + url
+if url:
+    if not url.startswith("http"): url = "http://" + url
+    print(Fore.YELLOW + "\t[+] Ejecutando request a: %s\n" %(url))
+    r = requests.get(url, proxies=proxies)
+    print("\t[+] Listo.\n")
+    print("\t[+] Datos: \n\n" + Fore.RESET)
+    print(Fore.WHITE + r.text.strip('\n').strip('\t') + Fore.RESET)
+    print("\n")
 else:
-    pass
-
-print(Fore.YELLOW + "\t[+] Ejecutando request a: %s\n" %(url))
-r = requests.get(url, proxies=proxies)
-print("\t[+] Listo.\n")
-print("\t[+] Datos: \n\n" + Fore.RESET)
-print(Fore.WHITE + r.text.strip('\n').strip('\t') + Fore.RESET)
-print("\n")
+    print(url and noturl.startswith("http"))
+    sys.exit(1)

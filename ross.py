@@ -55,9 +55,12 @@ if url:
     print(Fore.YELLOW + "\t[+] Ejecutando request a: %s\n" %(url))
     r = requests.get(url, proxies=proxies)
     print("\t[+] Listo.\n")
-    print("\t[+] Datos: \n\n" + Fore.RESET)
-    print(Fore.WHITE + r.text.strip('\n').strip('\t') + Fore.RESET)
-    print("\n")
+    print("\t[+] Status code: {}".format(r.status_code))
+    
+    if input("\t[?] Mostrar datos?: ").lower() == 's':
+        print("\t[+] Datos: \n\n" + Fore.RESET)
+        print(Fore.WHITE + r.text.strip('\n').strip('\t') + Fore.RESET)
+        print("\n")
 else:
     print(url and noturl.startswith("http"))
     sys.exit(1)

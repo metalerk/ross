@@ -1,6 +1,4 @@
-# ROSS
-
-Remote Onion Site Script
+# ROSS - Remote Onion Site Script
 
 ![ross_logo](https://user-images.githubusercontent.com/13503868/73587150-8e773800-447d-11ea-8848-fdde0842e946.png)
 

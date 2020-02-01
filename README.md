@@ -14,7 +14,9 @@ It retrieves the HTML source code to being analyzed later.
 Just type (as superuser):
 
 ```
-python ross.py
+$ chmod +x ross.py
+./ross.py
+./ross.py http://luisesteban.mx --listen localhost:5000 --save out.html --verbose
 ```
 
 and a prompt will ask for the URL.

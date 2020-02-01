@@ -11,7 +11,7 @@ It retrieves the HTML source code to being analyzed later.
 
 Just type (as superuser):
 
-```
+```bash
 $ chmod +x ross.py
 $ ./ross.py
 $ ./ross.py http://luisesteban.mx --listen localhost:5000 --save out.html --verbose

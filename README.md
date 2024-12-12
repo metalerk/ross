@@ -12,8 +12,14 @@ It retrieves the HTML source code to being analyzed later.
 Just type:
 
 ```bash
+# help menu
 $ python ross.py -h
+
+# set 5 retries
 $ python ross.py https://metalerk.github.io --retry 5 --serve
+
+# start local webserver (images with relative paths are not shown)
+$ python ross.py https://metalerk.github.io --serve
 ```
 
 and a prompt will ask for the URL.

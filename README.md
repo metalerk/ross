@@ -12,6 +12,24 @@ For scraping the Tor network, Polipo and Tor proxies must be set beforehand.
 
 You can use [this guide](https://sinfallas.wordpress.com/2014/06/16/tor-polipo-privoxy/) to configure Tor + Polipo + Privoxy.
 
+## Installation
+
+- Setting up `pyenv` environment:
+
+```bash
+# initialize virtualenv
+pyenv virtualenv ross_env
+
+# activate virtualenv
+pyenv activate ross_env
+```
+
+Install dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
 ## Usage
 
 Just type:

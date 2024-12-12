@@ -9,10 +9,10 @@ It retrieves the HTML source code to being analyzed later.
 
 ## Usage
 
-Just type (as superuser):
+Just type:
 
 ```bash
-$ python ross.py
+$ python ross.py -h
 $ python ross.py https://metalerk.github.io --retry 5 --serve
 ```
 

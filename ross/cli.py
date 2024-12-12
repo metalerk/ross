@@ -39,7 +39,7 @@ CONTEXT_SETTINGS = dict(help_option_names=["-h", "--help"])
 @click.option("--retry", default=10, type=int, help="Number of retries.")
 @click.option("--serve", is_flag=True, type=bool, help="Start webserver.")
 @click.option("--port", default=6060, type=int, help="Local webserver port.")
-@click.option("--use-proxies", is_flag=True, type=bool, help="Start webserver.")
+@click.option("--use-proxies", is_flag=True, type=bool, help="Use Polipo + Tor proxies.")
 @click.option("--save", default=False, type=bool, help="Save to file.")
 @click.argument("url")
 def start(retry: int, serve: str, port: int, save: str, url: str, use_proxies: bool):

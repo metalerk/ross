@@ -6,6 +6,11 @@
 
 This script allows you to make a GET request against an .onion URL.
 It retrieves the HTML source code to being analyzed later.
+For scraping the Tor network, Polipo and Tor proxies must be set beforehand.
+
+## Polipo + Tor Configuration
+
+You can use [this guide](https://sinfallas.wordpress.com/2014/06/16/tor-polipo-privoxy/) to configure Tor + Polipo + Privoxy.
 
 ## Usage
 
@@ -22,7 +27,19 @@ $ python ross.py https://metalerk.github.io --retry 5 --serve
 $ python ross.py https://metalerk.github.io --serve
 ```
 
-and a prompt will ask for the URL.
+**Output**
+
+```bash
+Usage: ross.py [OPTIONS] URL
+
+Options:
+  --retry INTEGER  Number of retries.
+  --serve          Start webserver.
+  --port INTEGER   Local webserver port.
+  --use-proxies    Start webserver.
+  --save BOOLEAN   Save to file.
+  -h, --help       Show this message and exit.
+```
 
 ## Tests
 
@@ -31,7 +48,6 @@ Run tests:
 ```bash
 python -m unittest discover -s tests
 ```
-
 
 ## Examples
 
@@ -46,7 +62,3 @@ python -m unittest discover -s tests
 ### Webserver
 
 ![ross_cli](/_assets/ross_webserver.gif)
-
-## Configuration
-
-You can use [this guide](https://sinfallas.wordpress.com/2014/06/16/tor-polipo-privoxy/) to configure Tor + Polipo + Privoxy.

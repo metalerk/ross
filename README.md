@@ -12,12 +12,21 @@ It retrieves the HTML source code to being analyzed later.
 Just type (as superuser):
 
 ```bash
-$ chmod +x ross.py
-$ ./ross.py
-$ ./ross.py http://luisesteban.mx --listen localhost:5000 --save out.html --verbose
+$ python ross.py
+$ python ross.py https://metalerk.github.io --retry 5 --serve
 ```
 
 and a prompt will ask for the URL.
+
+# Examples
+
+## 200 OK
+
+![ross_cli](/_assets/ross_cli_correct.gif)
+
+## 404 Not Found
+
+![ross_cli](/_assets/ross_cli_error.gif)
 
 ## Configuration
 

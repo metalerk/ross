@@ -27,7 +27,17 @@ $ python ross.py https://metalerk.github.io --retry 5 --serve
 $ python ross.py https://metalerk.github.io --serve
 ```
 
-**Help Menu**
+## Tests
+
+Run tests:
+
+```bash
+python -m unittest discover -s tests
+```
+
+## Examples
+
+### **Help Menu**
 
 ```bash
 Usage: ross.py [OPTIONS] URL
@@ -41,24 +51,14 @@ Options:
   -h, --help       Show this message and exit.
 ```
 
-## Tests
-
-Run tests:
-
-```bash
-python -m unittest discover -s tests
-```
-
-## Examples
-
-### 200 OK
+### 200 OK Response
 
 ![ross_cli](/_assets/ross_cli_correct.gif)
 
-### 404 Not Found
+### 404 Not Found Response
 
 ![ross_cli](/_assets/ross_cli_error.gif)
 
-### Webserver
+### Start Webserver
 
 ![ross_cli](/_assets/ross_webserver.gif)

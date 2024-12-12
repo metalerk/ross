@@ -1,8 +1,8 @@
 # ROSS - Remote Onion Site Script
 
-![ross_logo](https://user-images.githubusercontent.com/13503868/73587150-8e773800-447d-11ea-8848-fdde0842e946.png)
+![ross_logo](/_assets/ross_logo.jpg)
 
-ROSS is a tool intended to make a GET request against any .onion and clearweb address.
+**ROSS** is a tool intended to make a GET request against any .onion and clearweb address.
 
 This script allows you to make a GET request against an .onion URL.
 It retrieves the HTML source code to being analyzed later.

@@ -18,17 +18,26 @@ $ python ross.py https://metalerk.github.io --retry 5 --serve
 
 and a prompt will ask for the URL.
 
-# Examples
+## Tests
 
-## 200 OK
+Run tests:
+
+```bash
+python -m unittest discover -s tests
+```
+
+
+## Examples
+
+### 200 OK
 
 ![ross_cli](/_assets/ross_cli_correct.gif)
 
-## 404 Not Found
+### 404 Not Found
 
 ![ross_cli](/_assets/ross_cli_error.gif)
 
-## Webserver
+### Webserver
 
 ![ross_cli](/_assets/ross_webserver.gif)
 

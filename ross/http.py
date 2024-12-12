@@ -63,7 +63,7 @@ def make_request(
         if res.status_code == 200:
             return res
 
-    raise RossHTTPRequestTimeOut(f"Response {res.status_code} after {retry} retries.")
+    raise RossHTTPNot200(f"Response {res.status_code} after {retry} retries.")
 
 
 def webserver(address, data):

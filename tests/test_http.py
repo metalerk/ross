@@ -2,7 +2,7 @@ import unittest
 from unittest.mock import patch
 
 from ross.http import make_request
-from ross.exceptions import RossHTTPRequestTimeOut
+from ross.exceptions import RossHTTPNot200
 
 
 class RossHTTPTestCase(unittest.TestCase):
@@ -30,7 +30,7 @@ class RossHTTPTestCase(unittest.TestCase):
         mock_get.return_value.json.return_value = {"foo": "bar"}
 
         # assertion exception being raised
-        with self.assertRaises(RossHTTPRequestTimeOut):
+        with self.assertRaises(RossHTTPNot200):
             make_request("http://example.com", retry=2)
 
 

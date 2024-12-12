@@ -27,7 +27,7 @@ $ python ross.py https://metalerk.github.io --retry 5 --serve
 $ python ross.py https://metalerk.github.io --serve
 ```
 
-**Output**
+**Help Menu**
 
 ```bash
 Usage: ross.py [OPTIONS] URL
